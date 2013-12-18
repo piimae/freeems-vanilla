@@ -58,6 +58,7 @@
 #define PETERTRUCK_ID   12 // Work horse vehicle, about to get boosted
 #define SCAVENGER_ID    15 // Hacked up Miata turbo from the south!
 #define DEUCES10_ID     16 // Work in progress
+#define BMSTBO_ID       17
 // Looking forward to there being links to threads here soon! In no particular order:
 //#define LEV8N
 //#define SEANKR1
@@ -114,6 +115,9 @@
 #elif defined DEUCES10
 #define CONFIG DEUCES10_ID
 #define PRELIM_CONFIG "DEUCES10"
+#elif defined BMSTBO
+#define CONFIG BMSTBO_ID
+#define PRELIM_CONFIG "BMSTBO"
 #elif defined CLIFLAGS && !(defined XGATE)
 #error "CLIFLAGS defined, but no build matched! Not allowing config to fall back to default!"
 #define CONFIG -1
